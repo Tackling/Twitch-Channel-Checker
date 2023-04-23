@@ -12,6 +12,15 @@ This Python script checks the status of a list of Twitch channels and writes the
 
 4. Run the script using Python 3. The status of each channel will be checked and written to separate files named `live.txt` and `offline.txt`, also located in the same directory as the script.
 
+## Dependencies
+
+This script requires the `requests` and `colorama` modules. You can install them using `pip`:
+
+```bash
+pip install requests
+pip install colorama
+```
+
 ## Authentication
 
 The script uses Twitch API v5 to check the stream status of each channel. To authenticate with the Twitch API, you will need to provide a `Client-ID` and an `Authorization` token. These are set up in the script using placeholders. 
@@ -26,7 +35,9 @@ To get your own `Client-ID` and `Authorization` token, follow these steps:
 
 4. Generate an `Authorization` token for your application using the [Twitch API Authentication Guide](https://dev.twitch.tv/docs/authentication/getting-tokens-oauth#oauth-authorization-code-flow). The token must have the `user:read:email` scope.
 
-5. Replace the placeholders in the script with your `Client-ID` and `Authorization` token.
+5. Replace the placeholders in the script with your `Client-ID` and `Access Token` token.
+
+6. You can obtain your Access-Token [Here](https://github.com/daddyRv/Twitch-Oauth-Access-Token-Generator)
 
 # Notes
 
@@ -35,16 +46,6 @@ The script creates 10 worker threads to check the status of the channels in para
 If a channel is already in the live.txt or offline.txt files, it will not be added again to avoid duplicates.
 
 Finally, the script will print a message indicating that the process is complete once all channels have been checked.
-
-
-## Dependencies
-
-This script requires the `requests` and `colorama` modules. You can install them using `pip`:
-
-```bash
-pip install requests
-pip install colorama
-```
 
 ## License
 
