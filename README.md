@@ -44,3 +44,12 @@ This script requires the `requests` and `colorama` modules. You can install them
 ```bash
 pip install requests
 pip install colorama
+```
+
+## License
+
+This program is licensed under the MIT License. See the [LICENSE](./LICENSE) file for more information.
+
+## Contributing
+
+Contributions are welcome! If you find a bug or have a feature request, please open an issue on GitHub or submit a pull request.
