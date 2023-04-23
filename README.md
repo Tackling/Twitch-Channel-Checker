@@ -1,6 +1,6 @@
 # Twitch Channel Status Checker
 
-This Python script checks the status of a list of Twitch channels and writes the result to separate files for live and offline channels.
+This Python script uses the Twitch API to check if channels are live or offline. It creates multiple worker threads to check channels in parallel and saves the results to two separate text files, one for live channels and another for offline channels.
 
 ## How to Use
 
